@@ -82,7 +82,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 char sub[3];
 strncpy(sub, p, 2);
 sub[2] = '\0';
-
+//openhab item update 
   if (switchStatus == 1) {
     client.publish(sub, "ON");
   }
